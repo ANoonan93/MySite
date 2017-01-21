@@ -23,5 +23,6 @@ from App import views
 urlpatterns = [
 	url(r'^$', views.home, name='home'),
 	url(r'^basicInfo', views.basicInfo, name='basicInfo'),
+	url(r'^contact', views.contact, name='contact'),
     url(r'^admin/', admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
